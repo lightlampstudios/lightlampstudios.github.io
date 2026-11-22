@@ -2,229 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Light Lamp Studios | Cozy, satisfying mobile games</title>
-  <meta name="description" content="Light Lamp Studios is an independent mobile game studio making cozy, satisfying simulation games for Android: no ads, try before you buy, plays offline.">
-  <meta name="theme-color" content="#0b1b2b">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Light Lamp Studios | Cozy, satisfying games for Android</title>
+  <meta name="description" content="Light Lamp Studios makes calm, hands-on simulation games for Android. $4 each, the first hour free, no ads, and they play offline.">
+  <meta name="theme-color" content="#08182A">
   <link rel="canonical" href="https://lightlampstudios.com/">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/brand/favicon-32.png">
-  <link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Light Lamp Studios">
-  <meta property="og:title" content="Light Lamp Studios | Cozy, satisfying mobile games">
-  <meta property="og:description" content="Cozy simulation games for Android. No ads. Try before you buy. Plays offline.">
+  <meta property="og:title" content="Light Lamp Studios | Cozy, satisfying games for Android">
+  <meta property="og:description" content="Small games that feel good to finish. $4 each, the first hour free, no ads.">
   <meta property="og:url" content="https://lightlampstudios.com/">
   <meta property="og:image" content="https://lightlampstudios.com/images/brand/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preload" href="fonts/Fredoka-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Nunito-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Light Lamp Studios","url":"https://lightlampstudios.com/","logo":"https://lightlampstudios.com/images/brand/icon-512.png","email":"hello@lightlampstudios.com","founder":{"@type":"Person","name":"Knighthunter Thorin Cook"}}
-  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png">
+  <link rel="preload" href="fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
-  <a class="sr-only" href="#games">Skip to games</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ================= HEADER ================= -->
   <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="./" aria-label="Light Lamp Studios home">
-        <img src="images/brand/lamp-mark.svg" alt="" width="46" height="48">
-        <span class="brand-text">
-          <span class="brand-name">LIGHT LAMP<sup>TM</sup></span>
-          <span class="brand-sub">STUDIOS</span>
-        </span>
-      </a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
-      <nav class="main-nav" id="main-nav" aria-label="Main">
-        <ul>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#playtest">Playtest</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="beam" aria-hidden="true"><span class="beam-cone"></span><span class="beam-glow"></span></div>
+    <a class="brand" href="#main" aria-label="Light Lamp Studios home">
+      <svg class="lamp" viewBox="140 78 280 316" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="lampGold" gradientUnits="userSpaceOnUse" x1="150" y1="90" x2="330" y2="410">
+      <stop offset="0" stop-color="#FFD36E"/><stop offset="1" stop-color="#F2A23A"/>
+    </linearGradient>
+    <radialGradient id="lampBulb" cx="0.5" cy="0.35" r="0.65">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFE6A6"/>
+    </radialGradient>
+  </defs>
+  <path d="M169,381 L169,170 A68,68 0 0 1 237,102 L318,102" fill="none" stroke="url(#lampGold)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="335" cy="104" r="20" fill="#FFD36E"/>
+  <circle cx="335" cy="104" r="7" fill="#08182A"/>
+  <path d="M280,190 C280,146 304,120 335,120 C366,120 390,146 390,190 Z" fill="url(#lampGold)"/>
+  <path d="M297,160 C301,143 313,133 327,130" fill="none" stroke="#FFF1CF" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <rect x="271" y="184" width="128" height="15" rx="7.5" fill="#F2A23A"/>
+  <path class="bulb" d="M316,199 A19,19 0 0 0 354,199 Z" fill="url(#lampBulb)"/>
+</svg>
+      <span class="wordmark"><span class="wm-top">Light Lamp<sup>™</sup></span><span class="wm-bottom">Studios</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr">Menu</span><span class="bars" aria-hidden="true"></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#games">Games</a>
+      <a href="#playtest">Playtest</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-play" href="#" data-link="googleplay" data-label="Google Play"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg><span>Get it on Google Play</span></a>
+    </nav>
   </header>
 
-  <div class="layout">
-    <!-- ================= SIDEBAR ================= -->
-    <aside class="sidebar" aria-label="Studio links">
-      <a class="about-btn" href="#about">WHO IS LIGHT LAMP?</a>
+  <aside class="rail" aria-label="Light Lamp Studios elsewhere">
+    <nav class="rail-group" aria-label="Social media">
+      <a class="orb discord" href="#" data-link="discord" data-label="Discord" aria-label="Discord"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></a>
+      <a class="orb youtube" href="#" data-link="youtube" data-label="YouTube" aria-label="YouTube"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      <a class="orb tiktok" href="#" data-link="tiktok" data-label="TikTok" aria-label="TikTok"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      <a class="orb facebook" href="#" data-link="facebook" data-label="Facebook" aria-label="Facebook"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+      <a class="orb instagram" href="#" data-link="instagram" data-label="Instagram" aria-label="Instagram"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+    </nav>
+    <span class="rail-gap" aria-hidden="true"></span>
+    <nav class="rail-group" aria-label="Get the games and contact">
+      <a class="orb googleplay" href="#" data-link="googleplay" data-label="Google Play" aria-label="Google Play"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg></a>
+      <a class="orb email" href="mailto:hello@lightlampstudios.com" data-label="Email the studio" aria-label="Email the studio"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></a>
+    </nav>
+  </aside>
 
-      <div class="side-group">
-        <h2>Social Media</h2>
-        <div class="btn-list">
-          <a class="social-btn discord"   data-link="discord"   href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>Discord</span></a>
-          <a class="social-btn youtube"   data-link="youtube"   href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg><span>YouTube</span></a>
-          <a class="social-btn tiktok"    data-link="tiktok"    href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg><span>TikTok</span></a>
-          <a class="social-btn facebook"  data-link="facebook"  href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg><span>Facebook</span></a>
-          <a class="social-btn instagram" data-link="instagram" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg><span>Instagram</span></a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Small games that feel good to finish.</h1>
+        <p class="lede">Calm, hands-on simulation games for Android from a one-person studio in Longview, Washington. Frost a cake, scrub the rust off an old console, mow perfect stripes into a lawn, and lose track of time in the best way.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">See the games</a>
+          <a class="btn btn-quiet" href="#playtest">Become a playtester</a>
         </div>
       </div>
+      <figure class="hero-art" aria-label="Gameplay from three Light Lamp games">
+        <img class="shot shot-main" src="images/games/backyard-bloom-gameplay-clean.jpg" alt="Backyard Bloom: a farm with striped lawns, a red barn, a farm stand and crop fields" width="1600" height="900">
+        <img class="shot shot-a" src="images/games/tidewell-aquatics-gameplay-clean.jpg" alt="Tidewell Aquatics: scraping algae off aquarium glass to reveal goldfish" width="1600" height="900">
+        <img class="shot shot-b" src="images/games/deep-time-gameplay-clean.jpg" alt="Deep Time: dinosaur skeletons in a museum hall" width="1600" height="900">
+      </figure>
+    </section>
 
-      <div class="side-group">
-        <h2>Get the Games</h2>
-        <div class="btn-list">
-          <a class="social-btn googleplay" data-link="googleplay" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg><span>Google Play</span></a>
+    <section class="facts" aria-label="What every game includes">
+      <dl>
+        <div><dt>$4, and it's yours</dt><dd>One price. No subscriptions, no pay-to-win, nothing to unlock with real money.</dd></div>
+        <div><dt>Try the first hour free</dt><dd>Google Play lets you play for an hour before you buy, and your progress carries over.</dd></div>
+        <div><dt>No ads, ever</dt><dd>Nothing pops up between you and the game.</dd></div>
+        <div><dt>Plays offline</dt><dd>Every game saves automatically on your device, so you never lose progress.</dd></div>
+      </dl>
+    </section>
+
+    <section class="games" id="games" aria-labelledby="games-title">
+      <header class="section-head">
+        <h2 id="games-title">The games</h2>
+        <p>Six games are on the workbench. Each one is built around a single job that feels good to do well.</p>
+      </header>
+
+      <article class="feature">
+        <img src="images/games/butter-and-bloom-gameplay.jpg" alt="Butter &amp; Bloom: the bakery kitchen with the cake turntable, glazing rack and pantry" width="1600" height="900" loading="lazy">
+        <div class="feature-copy">
+          <p class="status status-live">Now in playtesting</p>
+          <h3>Butter &amp; Bloom</h3>
+          <p>Run a cozy bakery and cake studio. Roll dough, pipe frosting, pour mirror glazes and serve the morning rush, then grow into weddings, catering and a second shop.</p>
+          <a class="btn btn-primary" href="mailto:hello@lightlampstudios.com?subject=Butter%20%26%20Bloom%20playtest">Ask for a test copy</a>
         </div>
+      </article>
+
+      <div class="game-grid">
+        <article class="game">
+          <img src="images/games/rust-and-revive-gameplay.jpg" alt="Rust &amp; Revive: scrubbing grease off a part on the workbench" width="1600" height="900" loading="lazy">
+          <h3>Rust &amp; Revive</h3>
+          <p class="status">In development</p>
+          <p>Take apart dusty retro consoles and gadgets, scrub away the rust, repaint and rebuild them, and watch them power on again.</p>
+        </article>
+        <article class="game">
+          <img src="images/games/crown-and-facet-gameplay.jpg" alt="Crown &amp; Facet: a smoky quartz geode cracked open to show crystals" width="1600" height="900" loading="lazy">
+          <h3>Crown &amp; Facet</h3>
+          <p class="status">In development</p>
+          <p>Crack open geodes, cut and polish gems facet by facet, then craft rings and necklaces for customers and live auctions.</p>
+        </article>
+        <article class="game">
+          <img src="images/games/tidewell-aquatics-gameplay.jpg" alt="Tidewell Aquatics: scraping algae off aquarium glass to reveal goldfish" width="1600" height="900" loading="lazy">
+          <h3>Tidewell Aquatics</h3>
+          <p class="status">In development</p>
+          <p>Scrape, scrub and aquascape client tanks, then raise fish and grow a small studio into a full oceanarium.</p>
+        </article>
+        <article class="game game-wide">
+          <img src="images/games/deep-time-gameplay.jpg" alt="Deep Time: T. rex, Stegosaurus and Triceratops skeletons in the Grand Hall" width="1600" height="900" loading="lazy">
+          <h3>Deep Time</h3>
+          <p class="status">In development</p>
+          <p>Chip, air-scribe and brush fossils free from stone, rebuild dinosaur skeletons, and turn a single prep lab into a museum people line up to visit.</p>
+        </article>
+        <article class="game game-wide">
+          <img src="images/games/backyard-bloom-gameplay.jpg" alt="Backyard Bloom: the whole farm with lawns, barn, farm stand and fields" width="1600" height="900" loading="lazy">
+          <h3>Backyard Bloom</h3>
+          <p class="status">In development</p>
+          <p>Mow perfect lawn stripes, plant and water crops, ride out the seasons and sell your harvest to local buyers, one new plot at a time.</p>
+        </article>
       </div>
+    </section>
 
-      <div class="side-group">
-        <h2>Say Hello</h2>
-        <div class="btn-list">
-          <a class="social-btn email" href="mailto:hello@lightlampstudios.com"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><span>Email Us</span></a>
-        </div>
+    <section class="playtest" id="playtest" aria-labelledby="playtest-title">
+      <div class="playtest-copy">
+        <h2 id="playtest-title">Play it before anyone else</h2>
+        <p>Playtesters get a free copy on Android and help decide what changes before a game launches. It takes about 20 minutes per test.</p>
+        <a class="btn btn-primary" href="mailto:hello@lightlampstudios.com?subject=I%27d%20like%20to%20playtest">Email to join the playtest</a>
       </div>
-    </aside>
+      <ol class="steps">
+        <li><strong>Send your Gmail address.</strong> Use the one signed in to Google Play on your Android phone.</li>
+        <li><strong>Accept the invite.</strong> You'll get a link and a free code to install the test build from Google Play.</li>
+        <li><strong>Play, then tell me how it felt.</strong> A one-page form with room for screenshots. Honest is better than nice.</li>
+      </ol>
+    </section>
 
-    <!-- ================= MAIN ================= -->
-    <main id="top">
-      <section class="hero reveal" aria-labelledby="hero-title">
-        <div>
-          <p class="eyebrow">Independent Mobile Game Studio</p>
-          <h1 id="hero-title">Cozy games that feel <span class="glow">good</span> to play.</h1>
-          <p class="tagline">Satisfying simulators for your phone, tablet and PC.</p>
-          <p class="intro">Welcome to Light Lamp Studios, a one-person studio by Knighthunter Thorin Cook in Longview, Washington. I make calm, satisfying simulation games where you frost a cake, scrub the rust off an old console or mow perfect stripes into a lawn, and lose track of time in the best way.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#games">See the games</a>
-            <a class="btn btn-ghost" href="#playtest">Become a playtester</a>
-          </div>
-        </div>
-        <div class="hero-art"><img src="images/brand/lamp-mark.svg" alt="Light Lamp Studios lamp logo" width="330" height="345"></div>
-      </section>
-
-      <div class="promises reveal" role="list">
-        <div class="promise" role="listitem"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M8 15l2.2-6h.6L13 15M8.8 13h3.4M15.5 9v6h1.3a2.2 2.2 0 0 0 2.2-2.2v-1.6A2.2 2.2 0 0 0 16.8 9z" stroke-width="1.6"/><path d="M3 3l18 18"/></svg></div><div><strong>No ads. Ever.</strong><span>Just the game, no interruptions.</span></div></div>
-        <div class="promise" role="listitem"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div><div><strong>Try before you buy</strong><span>Play free first on Google Play.</span></div></div>
-        <div class="promise" role="listitem"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div><div><strong>One price, yours</strong><span>No pay-to-win or subscriptions.</span></div></div>
-        <div class="promise" role="listitem"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/><path d="M2 8.8a15 15 0 0 1 20 0"/></svg></div><div><strong>Plays offline</strong><span>Your progress always saves.</span></div></div>
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="studio-copy">
+        <h2 id="studio-title">A small studio with the light on</h2>
+        <p>Light Lamp Studios started with a simple idea: games should feel good. Not stressful, not pushy, just satisfying. The click of a screw coming loose, a perfect frosting swirl, the first clean pane of an aquarium.</p>
+        <p>I work in IT by day and build games by lamplight at night. Every game is designed, tested and polished by hand, and shaped by real players before it reaches the store.</p>
+        <p class="signature">Knighthunter Thorin Cook, founder</p>
       </div>
+      <ul class="promises">
+        <li>Built for Android phones and tablets, and PC through Google Play Games.</li>
+        <li>Saves automatically, so you never lose your progress.</li>
+        <li>Relaxing music with full volume control, and menus that stay out of the way.</li>
+        <li>Tested from start to finish on real devices before every release.</li>
+        <li>No ads, no data selling and no tricks. Just a good game at a fair price.</li>
+      </ul>
+    </section>
 
-      <!-- GAMES -->
-      <section id="games" aria-labelledby="games-title">
-        <p class="eyebrow">Projects Library</p>
-        <h2 class="section-title" id="games-title">Our Games</h2>
-        <p class="section-lead">Every Light Lamp game is built around one idea: small, tactile tasks that feel good to finish. Here's what's on the workbench right now.</p>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Questions, press or support?</h2>
+      <a class="contact-mail" href="mailto:hello@lightlampstudios.com">hello@lightlampstudios.com</a>
+      <p>I read every email and usually reply within a couple of days.</p>
+    </section>
+  </main>
 
-        <div class="games-grid">
-          <article class="game-card reveal" style="--accent:#f28aa6">
-            <div class="art"><img src="images/games/butter-and-bloom.jpg" alt="Butter &amp; Bloom: a pink frosted cake on a turntable with a piping bag" loading="lazy" width="1600" height="900"><span class="status testing">In playtesting</span></div>
-            <div class="body">
-              <h3>Butter &amp; Bloom</h3>
-              <p>Run a cozy bakery and cake studio. Roll dough, pipe frosting, pour mirror glazes and serve the morning rush, then grow into weddings, catering and a second shop.</p>
-              <div class="tags"><span>Bakery sim</span><span>Cake decorating</span><span>Cozy business</span></div>
-            </div>
-          </article>
-
-          <article class="game-card reveal" style="--accent:#f0915a">
-            <div class="art"><img src="images/games/rust-and-revive.jpg" alt="Rust &amp; Revive: a retro handheld console, half rusty and half restored, on a workbench" loading="lazy" width="1600" height="900"><span class="status">In development</span></div>
-            <div class="body">
-              <h3>Rust &amp; Revive</h3>
-              <p>Take apart dusty retro consoles and gadgets, scrub away the rust, repaint and rebuild them, and watch them power on again. Grow a tiny garage into a full repair shop.</p>
-              <div class="tags"><span>Restoration</span><span>Repair shop</span><span>Retro tech</span></div>
-            </div>
-          </article>
-
-          <article class="game-card reveal" style="--accent:#b98cff">
-            <div class="art"><img src="images/games/crown-and-facet.jpg" alt="Crown &amp; Facet: a large blue cut gem on a velvet cushion beside a gold ring" loading="lazy" width="1600" height="900"><span class="status">In development</span></div>
-            <div class="body">
-              <h3>Crown &amp; Facet</h3>
-              <p>Crack open geodes, cut and polish gems facet by facet, then craft rings and necklaces for walk-in customers and live auctions. Build a small workshop into a luxury jewelry house.</p>
-              <div class="tags"><span>Gem cutting</span><span>Jewelry crafting</span><span>Auctions</span></div>
-            </div>
-          </article>
-
-          <article class="game-card reveal" style="--accent:#4fc3f7">
-            <div class="art"><img src="images/games/tidewell-aquatics.jpg" alt="Tidewell Aquatics: colorful fish swimming over coral in a bright aquarium" loading="lazy" width="1600" height="900"><span class="status">In development</span></div>
-            <div class="body">
-              <h3>Tidewell Aquatics</h3>
-              <p>Scrape, scrub and aquascape client tanks with soothing, ASMR-style care, then raise fish and grow a small studio into a full oceanarium.</p>
-              <div class="tags"><span>Aquarium care</span><span>Fishkeeping</span><span>Tycoon</span></div>
-            </div>
-          </article>
-
-          <article class="game-card reveal" style="--accent:#f2b46b">
-            <div class="art"><img src="images/games/deep-time.jpg" alt="Deep Time: a dinosaur skull fossil in rock with brushes and chisels in a museum lab" loading="lazy" width="1600" height="900"><span class="status">In development</span></div>
-            <div class="body">
-              <h3>Deep Time</h3>
-              <p>Chip, air-scribe and brush fossils free from stone, rebuild dinosaur skeletons, and turn a single prep lab into a museum people line up to visit.</p>
-              <div class="tags"><span>Fossil prep</span><span>Museum builder</span><span>Dinosaurs</span></div>
-            </div>
-          </article>
-
-          <article class="game-card reveal" style="--accent:#7fd36b">
-            <div class="art"><img src="images/games/backyard-bloom.jpg" alt="Backyard Bloom: a floating island farm with a red barn, sunflowers and striped lawn" loading="lazy" width="1600" height="900"><span class="status">In development</span></div>
-            <div class="body">
-              <h3>Backyard Bloom</h3>
-              <p>Mow perfect lawn stripes, plant and water crops, ride out the seasons and sell your harvest to local buyers. Expand your little plot one square at a time.</p>
-              <div class="tags"><span>Mowing</span><span>Gardening</span><span>Farming</span></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- PLAYTEST -->
-      <section id="playtest" class="reveal" aria-labelledby="playtest-title">
-        <div class="panel playtest">
-          <div>
-            <p class="eyebrow">Early Access</p>
-            <h2 class="section-title" id="playtest-title">Help test our games</h2>
-            <p>Want to play before everyone else? Light Lamp playtesters get free early copies on Android and help shape every game. Email us with the Gmail address you use on your Android phone, and we'll add you to the next test.</p>
-          </div>
-          <a class="btn btn-primary" href="mailto:hello@lightlampstudios.com?subject=I%27d%20like%20to%20playtest%20Light%20Lamp%20games&amp;body=Hi!%20Please%20add%20me%20to%20the%20playtest.%0A%0AMy%20Google%20Play%20Gmail%3A%20%0AMy%20phone%20model%3A%20"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg> Join the playtest</a>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="reveal" aria-labelledby="about-title">
-        <div class="panel">
-          <p class="eyebrow">Who is Light Lamp?</p>
-          <h2 class="section-title" id="about-title">A small studio with a warm light on</h2>
-          <div class="about-grid">
-            <div>
-              <p>Light Lamp Studios started with a simple idea: games should feel good. Not stressful, not pushy, just satisfying. The click of a screw coming loose, a perfect frosting swirl, the first clean pane of an aquarium.</p>
-              <p>I'm a solo developer who works in IT by day and builds games by lamplight at night. Every game is designed, tested and polished by hand, and shaped by real players in playtests before it ever reaches the store.</p>
-              <p class="signature">Knighthunter Thorin Cook, founder</p>
-            </div>
-            <ul class="checklist">
-              <li>Built for Android phones and tablets, and PC through Google Play Games.</li>
-              <li>Saves automatically, so you never lose your progress.</li>
-              <li>Relaxing music with full volume control, and menus that stay out of the way.</li>
-              <li>Tested from start to finish on real devices before every release.</li>
-              <li>No ads, no data selling and no tricks. Just a good game at a fair price.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="reveal" aria-labelledby="contact-title">
-        <div class="panel contact-card">
-          <p class="eyebrow">Direct Studio Contact</p>
-          <h2 class="section-title" id="contact-title">Questions, press or support?</h2>
-          <a class="mail" href="mailto:hello@lightlampstudios.com">hello@lightlampstudios.com</a>
-          <p style="color:var(--muted);margin:0">I read every email and usually reply within a couple of days.</p>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div>
-        © <span id="year">2026</span> Knighthunter Cook, doing business as Light Lamp Studios. All rights reserved.<br>
-        Light Lamp Studios™ and the lamp logo are trademarks of Knighthunter Cook.
-      </div>
-      <nav aria-label="Footer">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="#contact">Contact</a>
+    <div class="footer-top">
+      <a class="brand brand-small" href="#main" aria-label="Light Lamp Studios home"><svg class="lamp" viewBox="140 78 280 316" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="lampGoldF" gradientUnits="userSpaceOnUse" x1="150" y1="90" x2="330" y2="410">
+      <stop offset="0" stop-color="#FFD36E"/><stop offset="1" stop-color="#F2A23A"/>
+    </linearGradient>
+    <radialGradient id="lampBulbF" cx="0.5" cy="0.35" r="0.65">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFE6A6"/>
+    </radialGradient>
+  </defs>
+  <path d="M169,381 L169,170 A68,68 0 0 1 237,102 L318,102" fill="none" stroke="url(#lampGoldF)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="335" cy="104" r="20" fill="#FFD36E"/>
+  <circle cx="335" cy="104" r="7" fill="#08182A"/>
+  <path d="M280,190 C280,146 304,120 335,120 C366,120 390,146 390,190 Z" fill="url(#lampGoldF)"/>
+  <path d="M297,160 C301,143 313,133 327,130" fill="none" stroke="#FFF1CF" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <rect x="271" y="184" width="128" height="15" rx="7.5" fill="#F2A23A"/>
+  <path class="bulb" d="M316,199 A19,19 0 0 0 354,199 Z" fill="url(#lampBulbF)"/>
+</svg><span class="wordmark"><span class="wm-top">Light Lamp<sup>™</sup></span><span class="wm-bottom">Studios</span></span></a>
+      <nav class="footer-social" aria-label="Social media">
+        <a class="orb orb-small discord" href="#" data-link="discord" data-label="Discord" aria-label="Discord"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></a>
+      <a class="orb orb-small youtube" href="#" data-link="youtube" data-label="YouTube" aria-label="YouTube"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      <a class="orb orb-small tiktok" href="#" data-link="tiktok" data-label="TikTok" aria-label="TikTok"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      <a class="orb orb-small facebook" href="#" data-link="facebook" data-label="Facebook" aria-label="Facebook"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+      <a class="orb orb-small instagram" href="#" data-link="instagram" data-label="Instagram" aria-label="Instagram"><svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
       </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Knighthunter Cook, doing business as Light Lamp Studios. All rights reserved. Light Lamp Studios™ and the lamp logo are trademarks of Knighthunter Cook.</p>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy policy</a><a href="mailto:hello@lightlampstudios.com">Contact</a></nav>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2" defer></script>
 </body>
 </html>
