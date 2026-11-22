@@ -4,9 +4,9 @@
 const LINKS = {
   discord:    "https://discord.gg/BUcqrMHSyT",
   youtube:    "https://www.youtube.com/@lightlampstudios",
-  tiktok:     "",
+  tiktok:     "https://www.tiktok.com/@lightlampstudios",
   facebook:   "https://www.facebook.com/profile.php?id=61596765754368",
-  instagram:  "",
+  instagram:  "https://www.instagram.com/lightlampstudios/",
   googleplay: ""
 };
 
