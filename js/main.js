@@ -2,10 +2,10 @@
    To turn on a social or store button, paste its full link between the quotes below.
    Empty links show "coming soon" instead of going anywhere. */
 const LINKS = {
-  discord:    "",
-  youtube:    "",
+  discord:    "https://discord.gg/BUcqrMHSyT",
+  youtube:    "https://www.youtube.com/@lightlampstudios",
   tiktok:     "",
-  facebook:   "",
+  facebook:   "https://www.facebook.com/profile.php?id=61596765754368",
   instagram:  "",
   googleplay: ""
 };
